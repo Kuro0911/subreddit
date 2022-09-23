@@ -20,6 +20,10 @@ const TextWrap = styled.div`
   display: flex;
   justify-content: center;
   margin-top: -1em;
+  img {
+    width: 95%;
+    object-fit: contain;
+  }
   .btn {
     background-color: #ff4500;
     border-radius: 20px;
@@ -39,7 +43,6 @@ const TextWrap = styled.div`
     margin-right: 1.2em;
     margin-left: -9em;
     margin-top: -1%;
-    border: 1px solid black;
   }
   span {
     color: #7c7c7c;
