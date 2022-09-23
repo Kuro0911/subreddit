@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const BannerWrap = styled.div`
   width: 100%;
-  height: 43vh;
+  height: 45vh;
   background-color: white;
   h1 {
     font-weight: 500;
@@ -11,7 +11,7 @@ export const BannerWrap = styled.div`
 const ImageWrap = styled.div`
   img {
     width: 100%;
-    height: 35vh;
+    height: 40vh;
     object-fit: contain;
   }
 `;
@@ -19,7 +19,7 @@ const TextWrap = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: -1em;
+  margin-top: -2.25em;
   img {
     width: 95%;
     object-fit: contain;
@@ -46,6 +46,7 @@ const TextWrap = styled.div`
   }
   span {
     color: #7c7c7c;
+    font-weight: 700;
   }
 `;
 export { ImageWrap, TextWrap };
