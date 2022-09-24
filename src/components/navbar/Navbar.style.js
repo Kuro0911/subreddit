@@ -11,10 +11,28 @@ export const NavbarWrap = styled.div`
   display: flex;
   .left {
     width: 20%;
+    display: flex;
+    align-items: center;
     .logo {
       height: 2em;
       margin-left: 1em;
       margin-top: 0.5em;
+    }
+    .head {
+      display: flex;
+      align-items: center;
+      margin-left: 3em;
+      font-size: 16px;
+      .slug {
+        background-color: #ff3d00;
+        width: 1.1em;
+        height: 1.1em;
+        border-radius: 20px;
+        margin-right: 0.5em;
+        color: white;
+        text-align: center;
+        font-weight: bolder;
+      }
     }
   }
   .center {

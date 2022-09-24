@@ -3,6 +3,7 @@ import { About } from "./components/about/About";
 import { Banner } from "./components/banner/Banner";
 import { Navbar } from "./components/navbar/Navbar";
 import { Post } from "./components/post/Post";
+import { Sidebar } from "./components/sidebar/Sidebar";
 import { Sortbar } from "./components/sortbar/Sortbar";
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
+      <Sidebar />
       <Banner />
       <div className="wrapper">
         <div className="center">

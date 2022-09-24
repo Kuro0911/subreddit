@@ -11,6 +11,12 @@ export const Navbar = () => {
     <NavbarWrap>
       <div className="left">
         <img src={logo} className="logo" alt="" />
+        <div className="head">
+          <div className="slug">
+            <span>S</span>
+          </div>
+          r/sveltejs
+        </div>
       </div>
       <div className="center">
         <Searchbar />
