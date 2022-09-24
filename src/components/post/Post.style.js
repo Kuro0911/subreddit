@@ -2,17 +2,17 @@ import styled from "styled-components";
 
 export const PostWrap = styled.div`
   width: 50%;
-  height: 30vh;
+  height: fit-content;
   background-color: white;
   margin-bottom: 0.75em;
   display: flex;
   .vote {
     height: 100%
     width: 5%;
+    margin-top: 0.4em;
     .number{
     font-size: 12px;
     font-weight: 700;
-    margin-top: 0.25em;
     margin-bottom: 0.25em;
     color: ${(props) =>
       props.active === "up"
@@ -49,8 +49,46 @@ export const PostWrap = styled.div`
     }
   }
   .body {
-    background-color: red;
     height: 100%
     width: 95%;
+    margin-left: 0.5em;
+    margin-top: 0.4em;
+    text-align:left;
+    .posted-by{
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 16px;
+      color: #7c7c7c;
+      margin-bottom: 1.2em;
+    }
+    .head{
+      color : black;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 22px;
+      margin-bottom: 0.4em;
+    }
+    .data{
+      font-family: Noto Sans,Arial,sans-serif;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 21px;
+      word-break: break-word;
+      color: #1c1c1c;
+      margin-bottom: 1.5em;
+    }
+    .footer{
+      .btn{
+        color: #7c7c7c;
+        
+        span {
+          text-transform: initial;
+          font-weight: bold;
+        }
+      }
+      .btn:hover{
+        color: #7c7c7c;
+      }
+    }
   }
 `;
