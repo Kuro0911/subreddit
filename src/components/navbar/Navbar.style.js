@@ -7,7 +7,7 @@ export const NavbarWrap = styled.div`
   background-color: white;
   position: fixed;
   top: 0;
-  z-index: 1;
+  z-index: 1201;
   display: flex;
   .left {
     width: 20%;
@@ -17,6 +17,7 @@ export const NavbarWrap = styled.div`
       height: 2em;
       margin-left: 1em;
       margin-top: 0.5em;
+      cursor: pointer;
     }
     .head {
       display: flex;

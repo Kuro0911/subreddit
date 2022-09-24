@@ -1,10 +1,12 @@
 import "./App.css";
+import Drawer from "@mui/material/Drawer";
 import { About } from "./components/about/About";
 import { Banner } from "./components/banner/Banner";
 import { Navbar } from "./components/navbar/Navbar";
 import { Post } from "./components/post/Post";
 import { Sidebar } from "./components/sidebar/Sidebar";
 import { Sortbar } from "./components/sortbar/Sortbar";
+import { useState } from "react";
 
 function App() {
   const MOCK_DATA = [
@@ -28,10 +30,25 @@ function App() {
       data: "I'm the lead developer over a tabletop RPG game site. It's had a long history, starting out as a WordPress site, then moving to a standalone PHP site, then eventually to 11ty, and then as of 2021, to SvelteKit. So far it's been our favorite and all of our other projects use SvelteKit as the base. Problem is, we didn't bother to keep it up to date, so we kind of ignored all the latest RC updates.We got a notice from Netlify that they wouldn't support our Node version anymore, and to update. We could probably just update the image and the project would build as normal, but we all decided this would be a good opportunity to just update to the latest RC so we could keep things a bit more modern.",
     },
   ];
+  const [anchor, setAnchor] = useState(false);
+  const toggleDrawer = (anchor, open) => (event) => {
+    if (
+      event.type === "keydown" &&
+      (event.key === "Tab" || event.key === "Shift")
+    ) {
+      return;
+    }
+    setAnchor(open);
+  };
+  const handleOpen = (open) => {
+    setAnchor(!anchor);
+  };
   return (
     <div className="App">
-      <Navbar />
-      <Sidebar />
+      <Navbar open={handleOpen} />
+      <Drawer anchor="left" open={anchor} onClose={toggleDrawer(false)}>
+        <Sidebar />
+      </Drawer>
       <Banner />
       <div className="wrapper">
         <div className="center">

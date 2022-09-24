@@ -6,11 +6,18 @@ import KeyboardArrowDownOutlinedIcon from "@mui/icons-material/KeyboardArrowDown
 import PermIdentityOutlinedIcon from "@mui/icons-material/PermIdentityOutlined";
 import logo from "../../utils/redditLogo.png";
 import { Searchbar } from "./searchbar/Searchbar";
-export const Navbar = () => {
+export const Navbar = (props) => {
   return (
     <NavbarWrap>
       <div className="left">
-        <img src={logo} className="logo" alt="" />
+        <img
+          src={logo}
+          className="logo"
+          alt=""
+          onClick={() => {
+            props.open(true);
+          }}
+        />
         <div className="head">
           <div className="slug">
             <span>S</span>
