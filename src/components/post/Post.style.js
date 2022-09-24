@@ -28,7 +28,7 @@ export const PostWrap = styled.div`
     }
     .upvote-act{      
       transform: rotateZ(270deg);
-      background-color: #ff6a33;
+      color: #ff6a33;
       cursor: pointer;
     }
     .upvote:hover{
@@ -41,7 +41,7 @@ export const PostWrap = styled.div`
     }
     .downvote-act{      
       transform: rotateZ(90deg);
-      background-color: #7193ff;
+      color: #7193ff;
       cursor: pointer;
     }
     .downvote:hover{

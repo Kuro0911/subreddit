@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { PostWrap } from "./Post.style";
 import ForwardOutlinedIcon from "@mui/icons-material/ForwardOutlined";
+import ForwardIcon from "@mui/icons-material/Forward";
 
 export const Post = () => {
   const [votes, setVotes] = useState(10);
@@ -24,19 +25,37 @@ export const Post = () => {
   return (
     <PostWrap active={active}>
       <div className="vote">
-        <ForwardOutlinedIcon
-          className={active === "up" ? "upvote-act" : "upvote"}
-          onClick={() => {
-            handleClick("up");
-          }}
-        />
+        {active === "up" ? (
+          <ForwardIcon
+            className="upvote-act"
+            onClick={() => {
+              handleClick("up");
+            }}
+          />
+        ) : (
+          <ForwardOutlinedIcon
+            className="upvote"
+            onClick={() => {
+              handleClick("up");
+            }}
+          />
+        )}
         <div className="number">{votes}</div>
-        <ForwardOutlinedIcon
-          className={active === "down" ? "downvote-act" : "downvote"}
-          onClick={() => {
-            handleClick("down");
-          }}
-        />
+        {active === "down" ? (
+          <ForwardIcon
+            className="downvote-act"
+            onClick={() => {
+              handleClick("down");
+            }}
+          />
+        ) : (
+          <ForwardOutlinedIcon
+            className="downvote"
+            onClick={() => {
+              handleClick("down");
+            }}
+          />
+        )}
       </div>
       <div className="body"></div>
     </PostWrap>
