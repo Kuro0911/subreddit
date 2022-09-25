@@ -24,15 +24,13 @@ export const NavbarWrap = styled.div`
       align-items: center;
       margin-left: 3em;
       font-size: 16px;
-      .slug {
-        background-color: #ff3d00;
-        width: 1.1em;
-        height: 1.1em;
+      .img {
+        width: 1.3em;
+        background-color: #dedede;
         border-radius: 20px;
-        margin-right: 0.5em;
-        color: white;
-        text-align: center;
-        font-weight: bolder;
+        height: 1.3em;
+        margin-right: 7px;
+        margin-top: 2px;
       }
     }
   }

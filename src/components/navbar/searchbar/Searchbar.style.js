@@ -29,9 +29,10 @@ export const SearchWrap = styled.div`
         margin-top: -0.2em;
       }
       .icon {
-        margin-left: 0.25em;
-        color: #007ed0;
-        font-size: 20px;
+        width: 0.75em;
+        background-color: #dedede;
+        border-radius: 20px;
+        height: 0.75em;
       }
       .cross-icon {
         margin-left: 0.2em;

@@ -6,6 +6,7 @@ import KeyboardArrowDownOutlinedIcon from "@mui/icons-material/KeyboardArrowDown
 import PermIdentityOutlinedIcon from "@mui/icons-material/PermIdentityOutlined";
 import logo from "../../utils/redditLogo.png";
 import { Searchbar } from "./searchbar/Searchbar";
+import logoSub from "../../utils/logoImg.png";
 export const Navbar = (props) => {
   return (
     <NavbarWrap>
@@ -19,9 +20,7 @@ export const Navbar = (props) => {
           }}
         />
         <div className="head">
-          <div className="slug">
-            <span>S</span>
-          </div>
+          <img src={logoSub} alt="" className="img" />
           r/sveltejs
         </div>
       </div>

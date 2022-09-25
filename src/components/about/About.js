@@ -13,27 +13,28 @@ import CakeOutlinedIcon from "@mui/icons-material/CakeOutlined";
 import LocalOfferIcon from "@mui/icons-material/LocalOffer";
 
 export const About = () => {
+  const data = {
+    heading: "About Community",
+    body: "Svelte is a radical new approach to building user interfaces. Whereas traditional frameworks like React and Vue do the bulk of their work in the browser, Svelte shifts that work into a compile step that happens when you build your app. Instead of using techniques like virtual DOM diffing, Svelte writes code that surgically updates the DOM when the state of your app changes.",
+    members: "17.5k",
+    membersOnline: "60",
+    date: "Dec 3, 2016",
+    subName: "r/sveltejs",
+  };
   return (
     <AboutWrap>
       <TopWrap>
-        <h4>About Community</h4>
+        <h4>{data.heading}</h4>
         <MoreHorizOutlinedIcon className="icon" />
       </TopWrap>
-      <TextWrap>
-        Svelte is a radical new approach to building user interfaces. Whereas
-        traditional frameworks like React and Vue do the bulk of their work in
-        the browser, Svelte shifts that work into a compile step that happens
-        when you build your app. Instead of using techniques like virtual DOM
-        diffing, Svelte writes code that surgically updates the DOM when the
-        state of your app changes.
-      </TextWrap>
+      <TextWrap>{data.body}</TextWrap>
       <CountWrap>
         <div className="left">
-          <h2>17.5k</h2>
+          <h2>{data.members}</h2>
           <span>Members</span>
         </div>
         <div className="right">
-          <h2>60</h2>
+          <h2>{data.membersOnline}</h2>
           <span>Online</span>
         </div>
       </CountWrap>
@@ -41,11 +42,11 @@ export const About = () => {
       <FooterWrap>
         <div className="left">
           <CakeOutlinedIcon />
-          <span>Created Dec 3, 2016</span>
+          <span>Created {data.date}</span>
         </div>
         <div className="right">
           <LocalOfferIcon />
-          <span>r/sveltejs topics</span>
+          <span>{data.subName} topics</span>
         </div>
       </FooterWrap>
       <TagWrap>

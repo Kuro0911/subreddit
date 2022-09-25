@@ -49,6 +49,7 @@ export const SidebarWrap = styled.div`
       display: flex;
       color: #7c7c7c;
       align-items: center;
+      margin-bottom: 0.65em;
       justify-content: space-between;
       .ico {
         margin-right: 0.75em;
