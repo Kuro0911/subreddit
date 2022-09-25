@@ -2,7 +2,6 @@ import React from "react";
 import { SearchWrap } from "./Searchbar.style";
 
 import SearchIcon from "@mui/icons-material/Search";
-import FilterTiltShiftSharpIcon from "@mui/icons-material/FilterTiltShiftSharp";
 import CancelOutlinedIcon from "@mui/icons-material/CancelOutlined";
 import logo from "../../../utils/logoImg.png";
 
